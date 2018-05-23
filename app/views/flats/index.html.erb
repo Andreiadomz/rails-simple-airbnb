@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default">
   <div class="navbar-header">
-      <a class="navbar-brand" href="#">Simple Airbnb</a>
-    </div>
+    <a class="navbar-brand" href="#">Simple Airbnb</a>
+  </div>
   <div class='btn-toolbar pull-right'>
     <div class='btn-group'>
       <button type='button' class='btn btn-outline-success"'>Add flat</button>
@@ -9,26 +9,26 @@
   </div>
 </nav>
 
-
+s
 
 <div class="container">
   <h1>All our flats(<%= @flats.length %>)</h1>
 
   <div class="container">
     <div class="row">
-        <% @flats.each do |flat| %>
-          <div class="col-xs-12 col-sm-4">
-            <div class="card-upper">
-              <h2><%= flat.name %></h2>
-              <p><%= flat.address %></p>
-              <p><%= flat.description %></p>
-              <p><i class="fas fa-users"></i><%= flat.number_of_guests %> <i class="fas fa-euro-sign"></i><%= flat.price_per_night %></p>
-            </div>
-            <div class="card-lower">
-              <p>More info</p>
-            </div>
-          </div>
-        <% end %>
+      <% @flats.each do |flat| %>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card-upper">
+          <h2><%= flat.name %></h2>
+          <p><%= flat.address %></p>
+          <p><%= flat.description %></p>
+          <p><i class="fas fa-users"></i><%= flat.number_of_guests %> <i class="fas fa-euro-sign"></i><%= flat.price_per_night %></p>
+        </div>
+        <div class="card-lower">
+          <p>More info</p>
+        </div>
+      </div>
+      <% end %>
     </div>
   </div>
 </div>
